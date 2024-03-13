@@ -8,12 +8,14 @@
 }
 
 body{
-    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
     background: url(../imgs/coloridoBgImagem.png) no-repeat;
+    background-size: cover;
 }
 
 header{
-     height: 10vh; /*faz com que o header tenha uma altura de 10% da viewport height */
+    height: 10vh; /*faz com que o header tenha uma altura de 10% da viewport height */
     display: flex; /*faz com que os elementos filhos se comportem de maneira flexivel dentro da caixa*/
     justify-content: space-between;
     max-width: 1200px; /*ele cria um espaço fora definindo a largura maxima de 1200 pixels*/
@@ -47,19 +49,14 @@ header{
 
 #perfil{
     display: flex; /*faz com que os filhos do elemento pai->perfil sejam flexiveis*/
-    max-width: 1200px;
     height: 90vh; /*faz com que o container #perfil ocupe 90% da viewport height (Usei aqui para aumentar o tamanho da imagem e ela ainda assim ficar na pagina inicial toda)*/
-    margin: 0 auto;
     color: #c5c5c5;
     gap: 200px;
     align-items: center; /*faz com que os filhos fiquem centralizados*/
 }
 
-#perfil__dados{
-    gap: 100px;
-}
-
 #perfil__dados h1{
+    color: #ffffff;
     font-size: 3.5rem;
     font-weight: 600;
     padding: 30px 0;
@@ -74,3 +71,43 @@ header{
     color: #c5c5c5;
     font-weight: 300;
 }
+
+
+
+/* seção projetos - inicio */
+
+#projetos{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 200px;
+    color: #c5c5c5;
+}
+
+#projetos h2{
+    font-size: 8rem;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 5ch;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* seção projetos - final */
