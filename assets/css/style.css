@@ -8,8 +8,7 @@
 }
 
 body{
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     background: url(../imgs/coloridoBgImagem.png) no-repeat;
     background-size: cover;
 }
@@ -48,11 +47,15 @@ header{
 }
 
 #perfil{
-    display: flex; /*faz com que os filhos do elemento pai->perfil sejam flexiveis*/
-    height: 90vh; /*faz com que o container #perfil ocupe 90% da viewport height (Usei aqui para aumentar o tamanho da imagem e ela ainda assim ficar na pagina inicial toda)*/
+    height: 92vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 20px; 
+    gap: 110px;
+    align-items: center;
     color: #c5c5c5;
-    gap: 200px;
-    align-items: center; /*faz com que os filhos fiquem centralizados*/
 }
 
 #perfil__dados h1{
@@ -65,6 +68,7 @@ header{
 
 #perfil__dados h2{
     font-weight: 300;
+    
 }
 
 #perfil__dados p{
@@ -77,20 +81,105 @@ header{
 /* seção projetos - inicio */
 
 #projetos{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 200px;
+    gap: 180px;
     color: #c5c5c5;
 }
 
 #projetos h2{
     font-size: 8rem;
     line-height: 1;
-    text-transform: uppercase;
-    word-break: break-all;
-    max-width: 5ch;
+    text-transform: uppercase;  /*transforma o testo em maiusculo*/
+    word-break: break-all;  /* quebra de caractere*/
+    max-width: 3.5ch;   /* espaçamento entre os caractere*/
     color: #ffffff;
+}
+
+
+
+.principal__destaque{   /* pra dar destaque no meio da frase  */
+    font-weight: bold;
+    background: #3a4270;
+    padding: 4px;
+    border-radius: 2px 6px;
+    color: #fff;
+}
+
+#projetos__textos__principal{
+    line-height: 1.8;
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    
+}
+
+#projetos__lista{
+    background: #071257b6 ;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; /*templete modelo padrao( fr divide os tamanho iguais)*/
+    /* grid-template-columns: repeat(2.1fr); ou usar da no mesmo padrao*/
+    color: #fff;
+    padding:20px;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#projetos__lista h3{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+#projetos__lista p{
+    margin: 0;
+    padding: 0;
+    color: #b9b8b8;
+}
+
+#projetos__tags{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    align-items: start; /* alinhamento vertical*/    
+}
+
+#projetos__tags li{
+    background-color: #fff;
+    color: #000000;
+    border-radius: 4px;
+    padding: 4px 8px;
+    
+
+}
+/* sessao projeto - FINAL */
+
+
+/* inicio da sessao cursos */
+#cursos{
+    background-color: #071257b6;
+    margin-top: 50px;
+}
+
+#cursos__grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 110px;
+}
+
+#cursos__grid h2{
+    font-size: 8rem;
+    color: #fff;
+    word-break: break-all;
+    max-width: 4ch; 
+    text-transform: uppercase;
+
 }
 
 
