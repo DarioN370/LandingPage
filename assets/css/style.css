@@ -182,7 +182,7 @@ header{
     gap: 110px;
 }
 
-#cursos__grid h2{
+.titulo__principal{
     font-size: 8rem;
     color: var(--cor-fonte-principal);
     word-break: break-all;
@@ -191,16 +191,44 @@ header{
 }
 
 #cursos__geral{
-    
+
 }
 
 #cursos__texto__principal{
+    margin-top: 50px;
     color: var(--cor-fonte-secundaria);
+    line-height: 1.8;
 }
 
+.container__formacoes{
+    margin-top: 75px;
+    display: flex;
+    gap: 10px;
+}
 
+.formacoes__caixa{
+    background: #000000b6 ;
+    color: var(--cor-fonte-principal);
+    padding:25px;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
 
+.titulo{
+    color: var(--cor-fonte-secundaria);
+    font-size: 0.75rem;
+}
 
+.nome__do__curso{
+    color: var(--cor-fonte-principal);
+    margin-bottom: 50px;
+}
+
+.lugar{
+    color: var(--cor-fonte-secundaria);
+    font-size: 1rem;
+}
 
 
 
