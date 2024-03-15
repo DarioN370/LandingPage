@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
-    font-family: "Poppins", sans-serif;
+    font-family: var(--fonte-principal);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+:root{
+    --fonte-principal: "Poppins", sans-serif;
+    --fonte-secundaria: ;
+
+    --cor-fonte-principal: #ffffff;
+    --cor-fonte-secundaria: #c5c5c5;
+    --cor-fonte-terciaria: #000000;
 }
 
 body{
@@ -55,7 +64,6 @@ header{
     padding: 35px 20px; 
     gap: 110px;
     align-items: center;
-    color: #c5c5c5;
 }
 
 #perfil__dados h1{
@@ -67,12 +75,12 @@ header{
 }
 
 #perfil__dados h2{
+    color: var(--cor-fonte-secundaria);
     font-weight: 300;
-    
 }
 
 #perfil__dados p{
-    color: #c5c5c5;
+    color: var(--cor-fonte-secundaria);
     font-weight: 300;
 }
 
@@ -86,7 +94,6 @@ header{
     max-width: 1200px;
     margin: 0 auto;
     gap: 180px;
-    color: #c5c5c5;
 }
 
 #projetos h2{
@@ -95,12 +102,14 @@ header{
     text-transform: uppercase;  /*transforma o testo em maiusculo*/
     word-break: break-all;  /* quebra de caractere*/
     max-width: 3.5ch;   /* espaçamento entre os caractere*/
-    color: #ffffff;
+    color: var(--cor-fonte-principal);
 }
 
+#projetos__texto__principal p{
+    color: var(--cor-fonte-secundaria);
+}
 
-
-.principal__destaque{   /* pra dar destaque no meio da frase  */
+.principal__destaque{   /* pra dar destaque nas tecnologias no meio da frase  */
     font-weight: bold;
     background: #3a4270;
     padding: 4px;
@@ -120,7 +129,7 @@ header{
     display: grid; 
     grid-template-columns: 1fr 1fr; /*templete modelo padrao( fr divide os tamanho iguais)*/
     /* grid-template-columns: repeat(2.1fr); ou usar da no mesmo padrao*/
-    color: #fff;
+    color: var(--cor-fonte-principal);
     padding:20px;
     gap: 20px;
     border-radius: 5px;
@@ -136,7 +145,7 @@ header{
 #projetos__lista p{
     margin: 0;
     padding: 0;
-    color: #b9b8b8;
+    color: var(--cor-fonte-secundaria);
 }
 
 #projetos__tags{
@@ -149,8 +158,8 @@ header{
 }
 
 #projetos__tags li{
-    background-color: #fff;
-    color: #000000;
+    background-color: #ffffff;
+    color: var(--cor-fonte-terciaria);
     border-radius: 4px;
     padding: 4px 8px;
     
@@ -175,11 +184,18 @@ header{
 
 #cursos__grid h2{
     font-size: 8rem;
-    color: #fff;
+    color: var(--cor-fonte-principal);
     word-break: break-all;
     max-width: 4ch; 
     text-transform: uppercase;
+}
 
+#cursos__geral{
+    
+}
+
+#cursos__texto__principal{
+    color: var(--cor-fonte-secundaria);
 }
 
 
