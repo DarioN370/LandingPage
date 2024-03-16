@@ -14,6 +14,8 @@
     --cor-fonte-principal: #ffffff;
     --cor-fonte-secundaria: #c5c5c5;
     --cor-fonte-terciaria: #000000;
+
+    --peso-fonte-negrito: bold;
 }
 
 body{
@@ -204,31 +206,87 @@ header{
     margin-top: 75px;
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .formacoes__caixa{
-    background: #000000b6 ;
+    background: #000000b6;
     color: var(--cor-fonte-principal);
     padding:25px;
-    gap: 20px;
     border-radius: 5px;
     margin-top: 15px;
+    flex: 1;
 }
 
 .titulo{
     color: var(--cor-fonte-secundaria);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
 }
 
 .nome__do__curso{
     color: var(--cor-fonte-principal);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    font-weight: var(--peso-fonte-negrito);
 }
 
 .lugar{
     color: var(--cor-fonte-secundaria);
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
+
+.formacoes__complementares{
+    
+}
+
+.titulo__complementares{
+    margin-top: 90px;
+    color: var(--cor-fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: var(--peso-fonte-negrito);
+}
+
+.conteudo__complementar{
+    margin-top: 40px;
+    color: var(--cor-fonte-principal);
+    font-size: 1rem;
+    font-weight: var(--peso-fonte-negrito);
+}
+
+.horas{
+    font-size: 1rem;
+    color: var(--cor-fonte-secundaria);
+    margin-left: 240px;
+    font-weight: 400;
+}
+
+.titulo__idiomas{
+    margin-top: 90px;
+    color: var(--cor-fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: var(--peso-fonte-negrito);
+}
+
+.ingles{
+    margin-top: 40px;
+    color: var(--cor-fonte-principal);
+    font-size: 1rem;
+    font-weight: var(--peso-fonte-negrito);
+}
+
+.espanhol{
+    color: var(--cor-fonte-principal);
+    font-size: 1rem;
+    font-weight: var(--peso-fonte-negrito);
+}
+
+.nivel{
+    font-weight: 400;
+    color: var(--cor-fonte-secundaria);
+}
+
 
 
 
