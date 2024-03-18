@@ -178,7 +178,7 @@ header{
 
 #cursos__grid{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr; /*1fr 1fr 1fr, seria usado para dividir em tres colunas... 1fr 1fr 1fr 1fr, seria em quatro colunas, e assim por diante*/
     max-width: 1200px;
     margin: 0 auto;
     gap: 110px;
@@ -190,10 +190,6 @@ header{
     word-break: break-all;
     max-width: 4ch; 
     text-transform: uppercase;
-}
-
-#cursos__geral{
-
 }
 
 #cursos__texto__principal{
@@ -235,10 +231,6 @@ header{
 .lugar{
     color: var(--cor-fonte-secundaria);
     font-size: 0.8rem;
-}
-
-.formacoes__complementares{
-    
 }
 
 .titulo__complementares{
@@ -287,6 +279,7 @@ header{
     color: var(--cor-fonte-secundaria);
 }
 
+/* seção formações - final */
 
 
 
@@ -300,5 +293,3 @@ header{
 
 
 
-
-/* seção projetos - final */
