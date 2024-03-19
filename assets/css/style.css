@@ -234,24 +234,26 @@ header{
 }
 
 .titulo__complementares{
-    margin-top: 90px;
     color: var(--cor-fonte-secundaria);
     font-size: 1.5rem;
     font-weight: var(--peso-fonte-negrito);
 }
 
-.conteudo__complementar{
-    margin-top: 40px;
-    color: var(--cor-fonte-principal);
-    font-size: 1rem;
-    font-weight: var(--peso-fonte-negrito);
+.formacoes__complementares{
+    margin-top: 90px;
 }
 
-.horas{
-    font-size: 1rem;
+#formacoes__complementares__lista{
+    margin-top: 50px;
+}
+
+.formacoes__complementares__item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carga__horaria{
     color: var(--cor-fonte-secundaria);
-    margin-left: 240px;
-    font-weight: 400;
 }
 
 .titulo__idiomas{
