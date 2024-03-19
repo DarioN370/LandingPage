@@ -88,7 +88,7 @@ header{
 
 
 
-/* seção projetos - inicio */
+/* sessão projetos - inicio */
 
 #projetos{
     display: grid;
@@ -281,7 +281,13 @@ header{
     color: var(--cor-fonte-secundaria);
 }
 
-/* seção formações - final */
+/* sessão formações - final */
+
+/* sessao contato - inicio */
+
+.rodape{
+    
+}
 
 
 
