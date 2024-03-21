@@ -118,7 +118,7 @@ header{
 }
 
 .principal__destaque{   /* pra dar destaque nas tecnologias no meio da frase  */
-    font-weight: bold;
+    font-weight: var(--peso-fonte-negrito);
     background: var(--cor-azul-tiago);
     padding: 4px;
     border-radius: 2px 6px;
@@ -308,6 +308,10 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+}
+
+#form__grid option{
+    font-size: 1.2rem;
 }
 
 #form__grid input, select{
