@@ -4,7 +4,6 @@
     font-family: var(--fonte-principal);
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 :root{
@@ -15,17 +14,22 @@
     --cor-fonte-secundaria: #c5c5c5;
     --cor-fonte-terciaria: #000000;
 
+    --cor-azul-tiago: #3a4270;
+
     --peso-fonte-negrito: bold;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    margin: 0;
     background: url(../imgs/coloridoBgImagem.png) no-repeat;
     background-size: cover;
 }
 
 header{
-    height: 10vh; /*faz com que o header tenha uma altura de 10% da viewport height */
+    min-height: 10vh; /*faz com que o header tenha uma altura de 10% da viewport height */
     display: flex; /*faz com que os elementos filhos se comportem de maneira flexivel dentro da caixa*/
     justify-content: space-between;
     max-width: 1200px; /*ele cria um espaço fora definindo a largura maxima de 1200 pixels*/
@@ -46,7 +50,7 @@ header{
 
 #menu a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: var(--cor-fonte-principal);
     padding: 8px 10px;
     font-size: 1.7rem;
     font-weight: 300;
@@ -58,7 +62,7 @@ header{
 }
 
 #perfil{
-    height: 92vh;
+    min-height: 92vh;
     display: grid;
     grid-template-columns: 1fr 2fr;
     max-width: 1200px;
@@ -96,6 +100,8 @@ header{
     max-width: 1200px;
     margin: 0 auto;
     gap: 180px;
+    min-height: 100vh;
+    padding-bottom: 20px;
 }
 
 #projetos h2{
@@ -113,7 +119,7 @@ header{
 
 .principal__destaque{   /* pra dar destaque nas tecnologias no meio da frase  */
     font-weight: bold;
-    background: #3a4270;
+    background: var(--cor-azul-tiago);
     padding: 4px;
     border-radius: 2px 6px;
     color: #fff;
@@ -173,7 +179,7 @@ header{
 /* inicio da sessao cursos */
 #cursos{
     background-color: #071257b6;
-    margin-top: 50px;
+    min-height: 100vh;
 }
 
 #cursos__grid{
@@ -274,6 +280,7 @@ header{
     color: var(--cor-fonte-principal);
     font-size: 1rem;
     font-weight: var(--peso-fonte-negrito);
+    margin-bottom: 50px;
 }
 
 .nivel{
@@ -283,11 +290,105 @@ header{
 
 /* sessão formações - final */
 
-/* sessao contato - inicio */
 
-/* .rodape{
+/* sessao contato - footer - INICIO */
 
-} */
+footer{
+    padding-top: 40px;
+    min-height: 100vh;
+}
+
+#footer__conteudo{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+#form__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#form__grid input, select{
+    padding: 12px 20px;
+    border: 1px solid var(--cor-azul-tiago);
+    border-radius: 4px;
+}
+
+.btn__contato{
+    padding: 10px;
+    background: var(--cor-azul-tiago);
+    color: var(--cor-fonte-principal);
+    text-transform: uppercase;
+    margin: 20px auto;
+    font-size: 1.4rem;
+    font-weight: var(--peso-fonte-negrito);
+    border: none;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.btn__contato:hover{
+    cursor: pointer;
+    background: #2f3349;
+}
+
+#footer__conteudo h2{
+    letter-spacing: 1.2rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--cor-fonte-principal);
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+#footer__inferior{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /*TRES COLUNAS*/
+    gap: 20px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#footer__inferior a{
+    text-decoration: none;
+    color: var(--cor-fonte-principal);
+    padding: 10px;
+    transition: 0.5s;
+}
+
+#footer__inferior a:hover{
+    color: #8f8f8f;
+}
+
+#footer__conteudo p{
+    color: var(--cor-fonte-principal);
+}
+
+.alinhar__esquerda{
+    text-align: start;
+}
+
+.alinhas__centro{
+    text-align: center;
+}
+
+.alinhar__direita{
+    text-align: end;
+}
+
+#copy{
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+
+/* sessao contato - footer - FINAL */
+
 
 
 

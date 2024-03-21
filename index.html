@@ -133,7 +133,48 @@
     </section>
 
     <footer id="contato">
+        <div id="footer__conteudo">
+            <h2>Contato</h2>
+            <form action=""><!--FORMULARIO DE CONTATO-->
+                <div id="form__grid">
+                    <input id="nome" type="text" name="nome" placeholder="Nome"> <!--id = css / type = tipo do input / name = back-end / placeholder = o que vai aparecer para o usuario-->
+                    <input id="e-mail" type="e-mail" name="e-mail" placeholder="E-mail" >
+                    <input id="telefone" type="text" name="telefone" placeholder="Telefone" >
+                    <select name="tipo" id="tipo">
+                        <option value="selecione" disabled selected>Selecione...</option> <!--O VALUE serve para que eu saiba o que vai ser exibido para mim no back, e nao fica visivel para o usuario-->
+                        <option value="duvidas">Dúvidas</option>
+                        <option value="serviços">Serviços</option>
+                        <option value="sugestões">Sugestões</option>
+                        <option value="contratar">Contratar</option>
+                    </select>
+                </div>
 
+                <button class="btn__contato" type="submit">Enviar</button> <!--O type submit serve para enviar o fomulario-->
+            </form>
+
+            <div id="footer__inferior">
+                <div class="alinhar__esquerda">
+                    <p><a href="mailto:netobis2015@gmail.com" target="_blank">E-Mail</a></p>
+                    <p><a href="https://github.com/DarioN370" target="_blank">Github.com</a></p>
+                    <p><a href="https://www.linkedin.com/in/dario-miranda-cordeiro-neto-1b406425a/" target="_blank">linkedin.com</a></p>
+                </div>
+
+                <div class="alinhar__centro">
+                    <p>Whatsapp</p>
+                    <p>(19) 99978-7301</p>
+                </div>
+
+                <div class="alinhar__direita">
+                    <p><a href="#" target="_blank">Intagram</a></p>
+                    <p><a href="#" target="_blank">Twitter</a></p>
+                    <p><a href="#" target="_blank">Discord</a></p>
+                </div>
+            </div>
+
+            <div id="copy">
+                <p>&copy; 2024 - Portifólio - Dário</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
