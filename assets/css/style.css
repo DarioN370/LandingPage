@@ -304,6 +304,16 @@ footer{
 
 }
 
+#footer__conteudo h2{
+    letter-spacing: 1.2rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--cor-fonte-principal);
+    font-weight: 700;
+    padding: 20px 0;
+}
+
 #form__grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -338,14 +348,20 @@ footer{
     background: #2f3349;
 }
 
-#footer__conteudo h2{
-    letter-spacing: 1.2rem;
-    font-size: 6rem;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--cor-fonte-principal);
-    font-weight: 700;
-    padding: 20px 0;
+#msg{
+    width: 100%;
+    margin-top: 20px;
+    height: 175px;
+    padding: 12px 20px;
+    border: 1px solid var(--cor-azul-tiago);
+    border-radius: 4px;
+}
+
+#form__aviso{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    color: var(--cor-fonte-secundaria);
 }
 
 #footer__inferior{
@@ -387,9 +403,6 @@ footer{
     padding: 20px 0;
     text-align: center;
 }
-
-
-
 
 /* sessao contato - footer - FINAL */
 
