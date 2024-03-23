@@ -135,21 +135,24 @@
     <footer id="contato">
         <div id="footer__conteudo">
             <h2>Contato</h2>
-            <form action=""><!--FORMULARIO DE CONTATO-->
+            <form action=""><!--FORMULÁRIO DE CONTATO-->
                 <div id="form__grid">
-                    <input id="nome" type="text" name="nome" placeholder="Nome"> <!--id = css / type = tipo do input / name = back-end / placeholder = o que vai aparecer para o usuario-->
-                    <input id="e-mail" type="e-mail" name="e-mail" placeholder="E-mail" >
+                    <input id="nome" type="text" class="borda__erro" name="nome" placeholder="Nome*"> <!--id = css / type = tipo do input / name = back-end / placeholder = o que vai aparecer para o usuario-->
+                    <input id="email" type="email" name="email" placeholder="E-mail*" >
                     <input id="telefone" type="text" name="telefone" placeholder="Telefone" >
                     <select name="tipo" id="tipo">
-                        <option value="selecione" disabled selected>Selecione...</option> <!--O VALUE serve para que eu saiba o que vai ser exibido para mim no back, e nao fica visivel para o usuario-->
+                        <option value="" disabled selected>Selecione...</option> <!--O VALUE serve para que eu saiba o que vai ser exibido para mim no back, e nao fica visivel para o usuario-->
                         <option value="duvidas">Dúvidas</option>
                         <option value="serviços">Serviços</option>
                         <option value="sugestões">Sugestões</option>
                         <option value="contratar">Contratar</option>
                     </select>
                 </div>
+                <textarea name="msg" id="msg" placeholder="Digite aqui sua mensagem."></textarea>
 
-                <button class="btn__contato" type="submit">Enviar</button> <!--O type submit serve para enviar o fomulario-->
+                <p id="form__aviso">* Campos obrigatórios</p>
+
+                <button class="btn__contato" type="button" onclick="enviarContato()" >Enviar</button> <!--O type submit serve para enviar o fomulario-->
             </form>
 
             <div id="footer__inferior">
@@ -177,5 +180,48 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function enviarContato(){
+            // usar LET funciona só na função enviar contato, o VAR posso usar fora dessa função, CONST só tem seu valor atribuido uma vez
+            
+            //    =atribui valor   ==compara
+
+
+            let nome = document.getElementById('nome') //NOME
+
+            if(nome.value == ''){
+                nome.style.border = "2px solid red"
+            }else{
+                nome.style.border = "1px solid var(--cor-azul-tiago)"
+            }
+
+             //traduzindo = se o valor do nome for vazio, mude a borda do id nome para 1px solid red...   {} significa = ação ser realizada, ou seja, se o valor for nenhum, faça o que esta dentro da chave
+
+            
+            //nao precisa dar um nome para a variavel
+
+            if(email.value == ''){
+                email.style.border = "2px solid red"
+            }else{
+                email.style.border = "1px solid var(--cor-azul-tiago)"
+            }
+
+
+            validaCampoVazio(tipo)
+            validaCampoVazio(msg)
+        }
+        //fiz primeiro esse de baixo, depois puxei ela em cima, o ideal é assim
+        function validaCampoVazio(campo){
+            if(campo.value == ''){
+                campo.style.border = "2px solid red" 
+            }else{
+                campo.style.border = "1px solid var(--cor-azul-tiago)"
+            }
+        }
+    </script>
+    
+
+
 </body>
 </html>
