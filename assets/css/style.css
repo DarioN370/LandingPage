@@ -31,14 +31,14 @@ body{
 header{
     min-height: 10vh; /*faz com que o header tenha uma altura de 10% da viewport height */
     display: flex; /*faz com que os elementos filhos se comportem de maneira flexivel dentro da caixa*/
-    justify-content: space-between;
+    justify-content: end;
     max-width: 1200px; /*ele cria um espaço fora definindo a largura maxima de 1200 pixels*/
     margin: 0 auto; /*faz com que os elementos venham para a esquerda*/
     align-items: center; /*centraliza os elementos do header verticalmente deixando-os alinados*/
 }
 
 #menu{
-    display: flex; /*faz com que os filhos do elemento pai->menu sejam flexiveis*/
+    display: flex; /*faz com que os filhos do elemento pai->menu sejam flexiveis*/    
     flex-wrap: nowrap; /*evita que meus itens do menu quebrem para baixo*/
     gap: 10px;
     list-style-type: none;
@@ -182,7 +182,7 @@ header{
     min-height: 100vh;
 }
 
-#cursos__grid{
+#cursos__principal{
     display: grid;
     grid-template-columns: 1fr 2fr; /*1fr 1fr 1fr, seria usado para dividir em tres colunas... 1fr 1fr 1fr 1fr, seria em quatro colunas, e assim por diante*/
     max-width: 1200px;
@@ -405,6 +405,137 @@ footer{
 }
 
 /* sessao contato - footer - FINAL */
+
+/*INICIO - CSS RESPONSIVO*/
+
+/*o css abaixo sera carregado quando o dispositivo tiver tela com largura menor ou igual a 600px
+aqui abaixo é o css responsivo, em cima é o desktop*/
+@media only screen and (max-width: 600px) {
+    header{
+        width: 100%;
+        justify-content: start;
+        padding: 10px;
+    }
+
+    header ul{
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu{
+        margin-top: 10px;
+        flex-direction: column;
+        /* display: none; */
+    }
+
+    #perfil{
+        width: 100%;
+        gap: 10px;
+        min-height: auto;
+        margin: 20px 0;
+    }
+
+    #perfil img{
+        width: 100%;
+    }
+
+    #perfil__dados > h1{
+        font-size: 2.3rem;
+        max-width: 100%;
+    }
+
+    #projetos{
+        gap: 0;
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    #projetos__lista{
+        grid-template-columns: 1fr;
+    }
+
+    #projetos h2{
+        word-break: normal;
+        font-size: 4rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    #projetos__texto__principal{
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    #cursos__principal{
+        grid-template-columns: 1fr;
+        gap: 0;
+        width: 100%;
+    }
+
+    #cursos__texto__principal{
+        padding: 10px;
+        margin: 0;
+    }
+
+    .titulo__principal{
+        word-break: normal;
+        font-size: 4rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .container__formacoes{
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    .formacoes__complementares, #idiomas__lista{
+        padding: 5px;
+    }
+
+    #footer__conteudo{
+        width: 100%;
+        padding: 10px;
+    }
+
+    #form__grid input{
+        width: 100%;
+    }
+
+    #footer__conteudo h2{
+        font-size: 4rem;
+        text-align: center;
+        max-width: 100%;
+        letter-spacing: normal;
+    }
+
+    #footer__inferior{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .alinhar__esquerda{
+        text-align: center;
+    }
+
+    .alinhar__direita{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FINAL - CSS RESPONSIVO*/
 
 
 
