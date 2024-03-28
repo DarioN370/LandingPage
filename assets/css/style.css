@@ -208,7 +208,6 @@ header{
     margin-top: 75px;
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -220,6 +219,7 @@ header{
     border-radius: 5px;
     margin-top: 15px;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .titulo{
@@ -247,10 +247,12 @@ header{
 
 .formacoes__complementares{
     margin-top: 90px;
+    padding: 10px;
 }
 
 #formacoes__complementares__lista{
     margin-top: 50px;
+    padding: 10px;
 }
 
 .formacoes__complementares__item{
@@ -522,18 +524,6 @@ aqui abaixo é o css responsivo, em cima é o desktop*/
         text-align: center;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*FINAL - CSS RESPONSIVO*/
 
