@@ -134,7 +134,7 @@
     <footer id="contato">
         <div id="footer__conteudo">
             <h2>Contato</h2>
-            <form action=""><!--FORMULÁRIO DE CONTATO-->
+            <form action="" id="form"><!--FORMULÁRIO DE CONTATO-->
                 <div id="form__grid">
                     <input id="nome" type="text" class="borda__erro" name="nome" placeholder="Nome*"> <!--id = css / type = tipo do input / name = back-end / placeholder = o que vai aparecer para o usuario-->
                     <input id="email" type="email" name="email" placeholder="E-mail*" >
@@ -187,7 +187,30 @@
             validaCampoVazio(email)
             validaCampoVazio(telefone)
             validaCampoVazio(tipo)
-            validaCampoVazio(msg)    
+            validaCampoVazio(msg)
+            
+            
+
+            // se todos os campos estao preenchidos, os dados sao enviados ao backend esse abaixo é a verificação
+            // o != significa diferente, ou seja, se os nome.value for diferente de vazio, ele esta preenchido
+            if(nome.value != '' && email.value != '' && telefone.value != '' && tipo.value != '' && msg.value != ''){
+
+                //aqui os dados sao enviados ao backend
+                
+                //captura todos os dados dos inputs do form para ser enviado ao backend
+                //serializacao dos dados
+                let dados = new FormData(form)
+
+                //envia os dados usando a fetch API ('AJAX')
+                fetch('backend/contato.php',{
+                    method: 'POST',
+                    body: dados
+                })
+
+            }
+
+
+
         }
         //funcao que verifica se os campos do form estao preenchidos ou vazios
         //se estiver vazio, add borda vermelha, caso contrario borda padrao do site
