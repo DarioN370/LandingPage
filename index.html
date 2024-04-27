@@ -181,37 +181,20 @@
     </footer>
 
     <script>
-        function enviarContato(){
-            // usar LET funciona só na função enviar contato, o VAR posso usar fora dessa função, CONST só tem seu valor atribuido uma vez
-            
-            //    =atribui valor   ==compara
-
-
-            let nome = document.getElementById('nome') //NOME
-
-            if(nome.value == ''){
-                nome.style.border = "2px solid red"
-            }else{
-                nome.style.border = "1px solid var(--cor-azul-tiago)"
-            }
-
-             //traduzindo = se o valor do nome for vazio, mude a borda do id nome para 1px solid red...   {} significa = ação ser realizada, ou seja, se o valor for nenhum, faça o que esta dentro da chave
-
-            
-            //nao precisa dar um nome para a variavel
-
-            if(email.value == ''){
-                email.style.border = "2px solid red"
-            }else{
-                email.style.border = "1px solid var(--cor-azul-tiago)"
-            }
-
-
+        // arrow function
+        const enviarContato = () => { 
+            validaCampoVazio(nome)
+            validaCampoVazio(email)
+            validaCampoVazio(telefone)
             validaCampoVazio(tipo)
-            validaCampoVazio(msg)
+            validaCampoVazio(msg)    
         }
-        //fiz primeiro esse de baixo, depois puxei ela em cima, o ideal é assim
-        function validaCampoVazio(campo){
+        //funcao que verifica se os campos do form estao preenchidos ou vazios
+        //se estiver vazio, add borda vermelha, caso contrario borda padrao do site
+
+        // =atribui valor   ==compara
+
+        const validaCampoVazio = (campo) => {
             if(campo.value == ''){
                 campo.style.border = "2px solid red" 
             }else{
