@@ -192,7 +192,7 @@
             
 
             // se todos os campos estao preenchidos, os dados sao enviados ao backend esse abaixo é a verificação
-            // o != significa diferente, ou seja, se os nome.value for diferente de vazio, ele esta preenchido
+            // o != significa diferente, ou seja, if nome.value dif empty, ele esta preenchido => (se o nome.value for diferente de vazio, ele esta preenchido )
             if(nome.value != '' && email.value != '' && telefone.value != '' && tipo.value != '' && msg.value != ''){
 
                 //aqui os dados sao enviados ao backend
@@ -212,8 +212,8 @@
 
 
         }
-        //funcao que verifica se os campos do form estao preenchidos ou vazios
-        //se estiver vazio, add borda vermelha, caso contrario borda padrao do site
+        //function verify (se os campos do form estao preenchidos ou vazios)
+        //se estiver vazio, add border red, else add border default (padrao do site)
 
         // =atribui valor   ==compara
 
