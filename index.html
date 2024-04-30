@@ -181,9 +181,10 @@
     </footer>
 
 
-
+    <!-- import sweetalert, o alerta de erro ou de sucesso -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
-    <!-- importacao inputmask -->
+
+    <!-- importacao inputmask, mask tel number (usa o inputmask.min pq é menor pra carregar do que o outro, nao entendi direito pq existe o outro entao se esse é menor e funciona igual)-->
     <script src="assets/js/inputmask/inputmask.min.js"></script>
 
     <script>
@@ -193,13 +194,14 @@
             mask:["(99) 9999-9999","(99) 99999-9999"]
          }).mask(telefone)
 
+
         //  Inputmask({
         //     mask:["99999-999"]
-        //  }).mask(cep)
+        //  }).mask(cep)    mascara para exemplo cep
 
         //  Inputmask({
         //     mask:["999.999.999-99"]
-        //  }).mask(cpf)
+        //  }).mask(cpf)    mascara para exemplo cpf
 
 
 
