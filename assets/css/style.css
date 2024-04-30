@@ -239,15 +239,15 @@ header{
     font-size: 0.8rem;
 }
 
+.formacoes__complementares{
+    margin: 0 auto;
+    padding: 10px;
+}
+
 .titulo__complementares{
     color: var(--cor-fonte-secundaria);
     font-size: 1.5rem;
     font-weight: var(--peso-fonte-negrito);
-}
-
-.formacoes__complementares{
-    margin: 0 auto;
-    padding: 10px;
 }
 
 #formacoes__complementares__lista{
